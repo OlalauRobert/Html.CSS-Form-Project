@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'cursive';
+    background: linear-gradient(#ffdadf, #fff7f9);
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: hsl(281, 68%, 21%);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: hsl(281, 68%, 21%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-input {
+    border: none;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: hsl(281, 68%, 21%);
+    font-weight: 500;
+    padding-left: 25px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-input:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-input::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    gap: 10px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 500px;
+}
+
+@media (max-width: 800px) {
+    .contact-input {
+        width: 80vw;
+    }
+
+    .contact-right {
+        display: none;
+    }
+}
